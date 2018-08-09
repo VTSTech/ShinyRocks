@@ -8,10 +8,10 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
-//import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.Plugin;
 
 public class EventsClass implements Listener {
-	//Plugin plugin = ShinyRocks.getPlugin(ShinyRocks.class);
+	Plugin plugin = ShinyRocks.getPlugin(ShinyRocks.class);
 	String lastDiamond = "";
 	String lastEmerald = "";
 	String lastGold = "";
@@ -22,19 +22,19 @@ public class EventsClass implements Listener {
 		if(player.getDisplayName() != lastDiamond){
 			if(block.getType().equals(Material.DIAMOND_ORE)){
 				lastDiamond = player.getDisplayName().replace(" ", "");
-				Bukkit.broadcastMessage(ChatColor.RED + player.getDisplayName() + ChatColor.DARK_RED + " just mined some shiny " + ChatColor.GOLD + block.getType().name());
+				Bukkit.broadcastMessage(ChatColor.LIGHT_PURPLE + player.getDisplayName() + ChatColor.DARK_RED + plugin.getConfig().getString("ShinyRocks.message") + ChatColor.AQUA + block.getType().name());
 			}
 		}
 		if (player.getDisplayName() != lastEmerald){
 			if(block.getType().equals(Material.EMERALD_ORE)){
 			lastEmerald = player.getDisplayName().replace(" ", "");;
-			Bukkit.broadcastMessage(ChatColor.RED + player.getDisplayName() + ChatColor.DARK_RED + " just mined some shiny " + ChatColor.GOLD + block.getType().name());
+			Bukkit.broadcastMessage(ChatColor.LIGHT_PURPLE+ player.getDisplayName() + ChatColor.DARK_RED + plugin.getConfig().getString("ShinyRocks.message") + ChatColor.GREEN + block.getType().name());
 			}
 		}
 		if (player.getDisplayName() != lastGold){
 			if(block.getType().equals(Material.GOLD_ORE)){
 				lastGold = player.getDisplayName().replace(" ", "");;
-				Bukkit.broadcastMessage(ChatColor.RED + player.getDisplayName() + ChatColor.DARK_RED + " just mined some shiny " + ChatColor.GOLD + block.getType().name());
+				Bukkit.broadcastMessage(ChatColor.LIGHT_PURPLE + player.getDisplayName() + ChatColor.DARK_RED + plugin.getConfig().getString("ShinyRocks.message") + ChatColor.YELLOW + block.getType().name());
 			}
 		}
 		//Bukkit.broadcastMessage(ChatColor.ITALIC + "DEBUG: " + player.getDisplayName() + " " + block.getType().name() + " Last: " + lastDiamond + " " + lastEmerald + " " + lastGold);
