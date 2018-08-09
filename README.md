@@ -8,8 +8,9 @@ main: mc.v0923.ShinyRocks.ShinyRocks
 
 description: Ore Breaking Broadcaster
 
+<img src="https://i.gyazo.com/7ac5eb85588726b17e1b5fc5d3beb745.png">
 
-A simple plugin that will broadcast whenever a player breaks the follow ores:
+A simple plugin that will broadcast whenever a player breaks the following ores:
 
 
 GOLD_ORE
