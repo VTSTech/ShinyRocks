@@ -2,13 +2,13 @@ name: ShinyRocks
 
 author: YT_Veritas0923
 
-version: 0.1a
+version: 0.1b
 
 main: mc.v0923.ShinyRocks.ShinyRocks
 
 description: Ore Breaking Broadcaster
 
-<img src="https://i.gyazo.com/50125b8f011245730853937a35d809f8.png">
+<img src="https://proxy.spigotmc.org/eb3c177c7d62063a8f763754fb59136e994e7304?url=https%3A%2F%2Fi.gyazo.com%2F264f00f2a5cc74af0a10673a30030d35.png">
 
 A simple plugin that will broadcast whenever a player breaks the following ores:
 
@@ -28,6 +28,10 @@ This is my first plugin :)
 SpigotMC https://www.spigotmc.org/resources/shinyrocks.59639/
 
 Changelog:
+
+v0.1b 8/22/2018 5:46:53 AM
+
+Added plugin prefix.
 
 v0.1a 8/9/2018 2:56:53 PM
 
